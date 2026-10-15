@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterUser.master.cs" Inherits="HabiTrackers.MasterUser" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title><%: Page.Title %> - HabiTrackers</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/site.css" rel="stylesheet" />
+    <style>
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            z-index: 1001;
+        }
+        .profile-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ffcc00;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .profile-dropdown {
+            position: absolute;
+            right: 0;
+            top: 50px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 200px;
+            z-index: 1002;
+        }
+        .dropdown-info {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .dropdown-item {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .dropdown-item:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .nav a.active {
+            background-color: #ffcc00 !important;
+            color: #01889f !important;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 8px 16px;
+        }
+        
+        .nav a {
+            padding: 8px 16px;
+            transition: all 0.3s ease;
+        }
+    </style>
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById('profileDropdown');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.profile-circle') && !event.target.matches('.profile-circle *')) {
+                var dropdown = document.getElementById('profileDropdown');
+                if (dropdown && dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form runat="server">
+        <div class="header">
+            <div class="logo">HabiTrackers</div>
+            <div class="nav">
+                <a href="Dashboard.aspx" runat="server" id="lnkDashboard">Dashboard</a>
+                <a href="Habits.aspx" runat="server" id="lnkHabits">Habits</a>
+                <a href="DailyTasks.aspx" runat="server" id="lnkDailyTasks">Daily Tasks</a>
+                <a href="Notes.aspx" runat="server" id="lnkNotes">Notes</a>
+                <a href="Diary.aspx" runat="server" id="lnkDiary">Diary</a>
+                <a href="Timetable.aspx" runat="server" id="lnkTimetable">Timetable</a>
+                <a href="StudyTimer.aspx" runat="server" id="lnkStudyTimer">Study Timer</a>
+            </div>
+            <div class="profile-container">
+                <div class="profile-circle" onclick="toggleDropdown()">
+                    <span id="spnInitials" runat="server"></span>
+                </div>
+                <div id="profileDropdown" class="profile-dropdown" style="display:none;">
+                    <div class="dropdown-info">
+                        <strong><asp:Label ID="lblUsername" runat="server" /></strong><br />
+                        <span><asp:Label ID="lblEmail" runat="server" /></span>
+                    </div>
+                    <a href="EditProfile.aspx" class="dropdown-item">Edit Profile</a>
+                    <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click" CssClass="dropdown-item" style="color:red;">Logout</asp:LinkButton>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
