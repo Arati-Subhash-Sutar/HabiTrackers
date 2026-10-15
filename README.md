@@ -1,5 +1,3 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7d52fcfa-eb4c-4dd5-bb53-03323d138aa6" /># HabiTrackers - Habit Tracking and Daily Management System
-
 A full-stack web application designed for personal productivity, habit formation, task management, and journaling.
 
 ## Technical Architecture
