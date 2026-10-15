@@ -35,13 +35,13 @@ A full-stack web application designed for personal productivity, habit formation
 
 ## Project Screenshots
 
-* **User Dashboard Interface:** `![UDashboard](images/user_dashboard.png)`
-* **Habits Tracking Interface:** `![Habit](images/habits.png)`
-* **Notes Tracking Interface:** `![Notes](images/notes.jpeg)`
-* **Time-Table Interface:** `![TimeTable](images/timetable.jpeg)`
-* **Study Timer Interface:** `![Study](images/studytimer.jpeg)`
-* **Admin Dashboard Interface:** `![ADashboard](images/admin_dashboard.png)`
-* **User Detail Interface:** `![Detail](images/user_detail.jpeg)`
+* **User Dashboard Interface:** ![UDashboard](./images/user_dashboard.png)
+* **Habits Tracking Interface:** ![Habit](./images/habits.png)
+* **Notes Tracking Interface:** ![Notes](./images/notes.jpeg)
+* **Time-Table Interface:** ![TimeTable](./images/timetable.jpeg)
+* **Study Timer Interface:** ![Study](./images/studytimer.jpeg)
+* **Admin Dashboard Interface:** ![ADashboard](./images/admin_dashboard.png)
+* **User Detail Interface:** ![Detail](./images/user_detail.jpeg)
 
 ---
 Author: Arati Sutar
