@@ -1,3 +1,5 @@
+# HabiTrackers - Habit Tracking and Daily Management System
+
 A full-stack web application designed for personal productivity, habit formation, task management, and journaling.
 
 ## Technical Architecture
@@ -19,6 +21,7 @@ A full-stack web application designed for personal productivity, habit formation
 * `Default.aspx` - System landing and entry page
 * `Login.aspx` - User authentication interface
 * `Dashboard.aspx` - Central user control panel
+* `AdminDashboard.aspx` - Administrative overview and management panel
 * `DailyTasks.aspx` - Daily habit and task tracking module
 * `Diary.aspx` - Personal journal management interface
 * `StudyTimer.aspx` - Focused productivity timer
