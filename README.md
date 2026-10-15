@@ -1,4 +1,4 @@
-# HabiTrackers - Habit Tracking and Daily Management System
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7d52fcfa-eb4c-4dd5-bb53-03323d138aa6" /># HabiTrackers - Habit Tracking and Daily Management System
 
 A full-stack web application designed for personal productivity, habit formation, task management, and journaling.
 
@@ -37,8 +37,13 @@ A full-stack web application designed for personal productivity, habit formation
 
 ## Project Screenshots
 
-* **Dashboard Interface:** `![Dashboard](images/dashboard.png)`
-* **Task Tracking View:** `![Tasks](images/dailytasks.png)`
+* **User Dashboard Interface:** `![UDashboard](images/user_dashboard.png)`
+* **Habits Tracking Interface:** `![Habit](images/habits.png)`
+* **Notes Tracking Interface:** `![Notes](images/notes.jpeg)`
+* **Time-Table Interface:** `![TimeTable](images/timetable.jpeg)`
+* **Study Timer Interface:** `![Study](images/studytimer.jpeg)`
+* **Admin Dashboard Interface:** `![ADashboard](images/admin_dashboard.png)`
+* **User Detail Interface:** `![Detail](images/user_detail.jpeg)`
 
 ---
 Author: Arati Sutar
